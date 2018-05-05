@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Include php files here for header and navigation -->
 <?php include_once 'header.php'; ?>
 <?php include_once 'navigation.php'; ?>
+<!-- ============================================ -->
+<!--       BODY OF THE 'myPage' PAGE              -->
+<!-- ============================================ -->
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <div class="jumbotron text-center">
@@ -252,26 +257,16 @@
   </div>
 </div>
 
-<!-- Add Google Maps -->
-<!-- <div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgBqCQXrAo2gFdUmpWfkDzRD66cHhmu78&callback=initMap">
-</script>
- -->
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgBqCQXrAo2gFdUmpWfkDzRD66cHhmu78&callback=initMap">
     </script>
+<!-- Include javascript file here  -->
 <script src="js/script.js" type="text/javascript"></script>
-<!-- Include footer -->
+<!-- Include footer php here -->
 <?php include_once 'footer.php';?>
 </body>
+<!-- ============================================ -->
+<!--       BODY OF THE 'myPage' PAGE ENDS         -->
+<!-- ============================================ -->
+
 </html>

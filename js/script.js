@@ -64,3 +64,16 @@ function allocateSubject(){
       }
     }
 }
+
+//Data transfer with in the same page
+function transfer(){
+  var option=document.getElementByID('productP').value;
+  sessionStorage.subject=option;
+  allocateSubject();
+
+}
+window.onload=allocateSubject();
+// Just working on JS functions and exploring
+function testSignUp(){
+  alert("Signed up successfully: "+document.getElementByID('productP'.value));
+}

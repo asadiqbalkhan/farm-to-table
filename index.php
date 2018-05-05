@@ -32,7 +32,8 @@
       <h2>About Us</h2><br>
       <h4>We farm to provide our customers with the best quality fresh products, STRAIGHT OUTA GREEN fields of Farmable.</h4><br>
       <p>Farmable was established in 2018, integrating technology with organic cultivated products. More details to be included later</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <br>
+      <a href="#contact" ><button  class="btn btn-default btn-lg">Join us</button></a>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-grain logo"></span>
@@ -221,7 +222,10 @@
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>
           <h4>per month</h4>
+          <!-- WILL WORK ON IT LATER -->
+          <a name="product" onClick="return testSignUp()" id="productP">
           <button class="btn btn-lg">Sign Up</button>
+          </a>
         </div>
       </div>
     </div>
@@ -229,6 +233,7 @@
 </div>
 
 <!-- Container (Contact Section) -->
+<form name="enquiry_form" action="database/enquiry_process.php" method="POST">
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
@@ -246,8 +251,9 @@
         <div class="col-sm-4 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
+        <!-- WORKING ON IT lol -->
         <div class="col-sm-4 form-group">
-          <input class="form-control" id="field" name="subject" placeholder="WORKING ON IT" type="field" required>
+          <input class="form-control" id="field" name="subject" type="field" required>
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
@@ -259,10 +265,12 @@
     </div>
   </div>
 </div>
-
+</form>
+<!-- GOOGLE MAPS Y U NO WORK??????? -->
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgBqCQXrAo2gFdUmpWfkDzRD66cHhmu78&callback=initMap">
     </script>
+
 <!-- Include javascript file here  -->
 <script src="js/script.js" type="text/javascript"></script>
 <!-- Include footer php here -->

@@ -44,3 +44,23 @@ $(document).ready(function(){
     });
   });
 })
+
+// Session storage function starts here
+function infoReq(sub){
+  saveSubject(sub);
+  window.location = "index.php";
+}
+
+function saveSubject(sub){
+  sessionStorage.subject = sub;
+}
+
+function allocateSubject(){
+  var field = document.getElementByID("field");
+  var confirm = document.getElementByID("confirmSection");
+    if(field){
+      if(sessionStorage.subject != ""){
+        field.value = "[Enquiry]: "+sessionStorage.subject;
+      }
+    }
+}

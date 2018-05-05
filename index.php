@@ -240,11 +240,14 @@
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
-        <div class="col-sm-6 form-group">
+        <div class="col-sm-4 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
-        <div class="col-sm-6 form-group">
+        <div class="col-sm-4 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+        <div class="col-sm-4 form-group">
+          <input class="form-control" id="field" name="subject" placeholder="WORKING ON IT" type="field" required>
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>

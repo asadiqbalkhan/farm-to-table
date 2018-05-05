@@ -1,41 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <title>Farmable</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
+<?php include_once 'header.php'; ?>
+<?php include_once 'navigation.php'; ?>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Farmable</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#services">OUR BELIEF</a></li>
-        <li><a href="#portfolio">PRODUCTS</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <div class="jumbotron text-center">
   <video  id="video-background" preload muted autoplay loop>
@@ -78,9 +45,9 @@
       <h4><strong>MISSION:</strong> Our mission is to provide high quality fresh grown products at the farms to restaurants.</h4><br>
       <p> The life of a farmer has never been easy, with long hours daily, be it plowing away at the soil or rearing the animals under the swealtering heat, praying for a bountiful harvest every season; life is not easy for them. With the advent of supermarkets and chemically enhanced vegetables and animal meat, the numbers of farmers are slowly dwindling. They are having difficulty sustaining their livelihood.
 
-What we aim to do is to create a website that allows the farmers to better connect with clients. The website will be a medium for chef's to order fresh produce straight from the farmer. These days, farmers are still reliant on the Farmer's market to sell their produce, but customers would rather the convenience of purchasing their groceries through supermarkets. While farmers can still sell their produce to supermarkets, they lose profits as the supermarkets would want those produce at a discounted rate.
+          What we aim to do is to create a website that allows the farmers to better connect with clients. The website will be a medium for chef's to order fresh produce straight from the farmer. These days, farmers are still reliant on the Farmer's market to sell their produce, but customers would rather the convenience of purchasing their groceries through supermarkets. While farmers can still sell their produce to supermarkets, they lose profits as the supermarkets would want those produce at a discounted rate.
 
-What we are offering is an alternative that maximizes the farmers profit margins, as we do not take percentage cuts but rather, a one-time payment. So in the long run, farmers would definitely have a better profit margin overall.</p>
+          What we are offering is an alternative that maximizes the farmers profit margins, as we do not take percentage cuts but rather, a one-time payment. So in the long run, farmers would definitely have a better profit margin overall.</p>
     </div>
   </div>
 </div>
@@ -303,14 +270,8 @@ marker.setMap(map);
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgBqCQXrAo2gFdUmpWfkDzRD66cHhmu78&callback=initMap">
     </script>
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>DataX Technology Solutions</p>
-</footer>
-
 <script src="js/script.js" type="text/javascript"></script>
-
+<!-- Include footer -->
+<?php include_once 'footer.php';?>
 </body>
 </html>

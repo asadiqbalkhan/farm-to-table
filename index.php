@@ -31,7 +31,9 @@
     <div class="col-sm-8">
       <h2>About Us</h2><br>
       <h4>We farm to provide our customers with the best quality fresh products, STRAIGHT OUTA GREEN fields of Farmable.</h4><br>
-      <p>Farmable was established in 2018, integrating technology with organic cultivated products. More details to be included later</p>
+      <p>Farmable distributes locally grown farm products to area restaurants, commercial kitchens, cafeterias, and independent grocery stores.
+      Our products include fruits, vegetables, cage-free eggs, herbs, cheese, grass-fed beef and lamb and pasture-raised chicken all raised without hormones or antibiotics.
+      We partner with the very best farmers in Kuching Sarawak that utilize sustainable agriculture and ranching methods to produce the highest quality, most flavorful product found on the market.</p>
       <br>
       <a href="#contact" ><button  class="btn btn-default btn-lg">Join us</button></a>
     </div>
@@ -47,13 +49,19 @@
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
+      <h2>Our Values, Why Farmable?</h2><br>
       <h4><strong>MISSION:</strong> Our mission is to provide high quality fresh grown products at the farms to restaurants.</h4><br>
       <p> The life of a farmer has never been easy, with long hours daily, be it plowing away at the soil or rearing the animals under the swealtering heat, praying for a bountiful harvest every season; life is not easy for them. With the advent of supermarkets and chemically enhanced vegetables and animal meat, the numbers of farmers are slowly dwindling. They are having difficulty sustaining their livelihood.
-
           What we aim to do is to create a website that allows the farmers to better connect with clients. The website will be a medium for chef's to order fresh produce straight from the farmer. These days, farmers are still reliant on the Farmer's market to sell their produce, but customers would rather the convenience of purchasing their groceries through supermarkets. While farmers can still sell their produce to supermarkets, they lose profits as the supermarkets would want those produce at a discounted rate.
-
           What we are offering is an alternative that maximizes the farmers profit margins, as we do not take percentage cuts but rather, a one-time payment. So in the long run, farmers would definitely have a better profit margin overall.</p>
+          <h3>Taste & Nutrition</h3>
+      <p>Because local products do not have to travel far to reach the consumer, the produce can be picked when it is ripest. When a fruit or vegetable is given the time to completely ripen, it fully develops and retains its vitamins and minerals, giving it a more vibrant flavor and maximizing the nutritional content.</p>
+          <h3>Optimal Freshness</h3>
+      <p>Our produce is generally harvested within 36 hours of delivery. They have a longer time to ripen “on the vine” and are ready to eat when delivered. They are not picked and processed and then spend a week or more traveling. Other non-local farms pick their produce when it’s still green or unripe. A common practice is to “gas” green tomatoes so they turn red. The result is a red tomato with the taste and texture of a green tomato.</p>
+          <h3>Economy</h3>
+      <p>Buying local keeps your money in the local economy. According to the London-based New Economics Foundation, a local farm’s income generated twice as much money for the local economy as a supermarket’s income in the same area.</p>
+          <h3>Community</h3>
+      <p>Each item that we carry has its own unique story. Buying locally means you are supporting the family farmers and ranchers that raised your food. Connecting to the sources of your food is a very meaningful part of enjoying your meals.</p>
     </div>
   </div>
 </div>

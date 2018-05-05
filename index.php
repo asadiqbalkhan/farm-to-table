@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Include php files here for header and navigation -->
-<?php include_once 'header.php'; ?>
-<?php include_once 'navigation.php'; ?>
+<?php include_once 'include/header.php'; ?>
+<?php include_once 'include/navigation.php'; ?>
 <!-- ============================================ -->
 <!--       BODY OF THE 'myPage' PAGE              -->
 <!-- ============================================ -->
@@ -263,7 +263,7 @@
 <!-- Include javascript file here  -->
 <script src="js/script.js" type="text/javascript"></script>
 <!-- Include footer php here -->
-<?php include_once 'footer.php';?>
+<?php include_once 'include/footer.php';?>
 </body>
 <!-- ============================================ -->
 <!--       BODY OF THE 'myPage' PAGE ENDS         -->

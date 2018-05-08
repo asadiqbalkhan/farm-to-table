@@ -6,5 +6,7 @@ php:
 before_script:
   - composer install --no-interaction
 
+install: php vendor/vendors.php
+
 script:
   - vendor/bin/phpunit

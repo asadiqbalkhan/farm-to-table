@@ -38,6 +38,12 @@
     z-index: -100;
     width:100%;
 }
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
   .container-fluid {
       padding: 60px 50px;
   }

@@ -140,7 +140,7 @@
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-eye-open logo-small"></span>
-      <h4 style="color:#303030;">VISIBILITY</h4>
+      <h4>VISIBILITY</h4>
       <p>We invite all of our premium customers to visit our farms, to have a look at our farm setup.</p>
     </div>
   </div>
@@ -229,7 +229,7 @@
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS 1</h3>
-          <h4>per month</h4>
+          <p>per month</p>
           <button class="btn btn-lg">Sign Up</button>
         </div>
       </div>
@@ -248,7 +248,7 @@
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>
-          <h4>per month</h4>
+          <p>per month</p>
           <button class="btn btn-lg">Sign Up</button>
         </div>
       </div>
@@ -267,7 +267,7 @@
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>
-          <h4>per month</h4>
+          <p>per month</p>
           <!-- WILL WORK ON IT LATER -->
           <a name="product" onClick="return testSignUp()" id="productP">
           <button class="btn btn-lg">Sign Up</button>
@@ -312,10 +312,8 @@
   </div>
 </div>
 </form>
-<!-- GOOGLE MAPS Y U NO WORK??????? -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgBqCQXrAo2gFdUmpWfkDzRD66cHhmu78&callback=initMap">
-    </script>
+<!-- Just need to get Google Maps API and edit it into the src link, it'll work -->
+<iframe  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDz_1Rk4az74eXiXXKUyC3VHcsSA4q7Q6o&amp;q=Swinburne+University,Kuching+Sarawak;" allowfullscreen="" id="map">	</iframe>
 
 <!-- Include javascript file here  -->
 <script src="js/script.js" type="text/javascript"></script>

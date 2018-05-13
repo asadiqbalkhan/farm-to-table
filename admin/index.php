@@ -152,8 +152,7 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                             <i class="material-icons">directions_run</i>
                                         </div>
                                         <div class="card-details">
-                                            <h4>Total Vendors</h4>
-
+                                            <h4>Total Users</h4>
                                         </div>
                                     </div>
                                 </div>

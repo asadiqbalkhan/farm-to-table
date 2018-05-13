@@ -27,10 +27,7 @@
       Our products include fruits, vegetables, cage-free eggs, herbs, cheese, grass-fed beef and lamb and pasture-raised chicken all raised without hormones or antibiotics.
       We partner with the very best farmers in Kuching Sarawak that utilize sustainable agriculture and ranching methods to produce the highest quality, most flavorful product found on the market.</p>
       <br>
-      <!-- TEST STARTS HERE -->
-      <button type="button" class="btn btn-default btn-lg" id="myBtn"><span class="glyphicon glyphicon-log-in"></span> Login</button>
-
-      <!-- Modal -->
+      <!-- Modal for login -->
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
 
@@ -58,7 +55,6 @@
               </form>
             </div>
             <div class="modal-footer">
-              <!-- <p>Not a member? <button type="button" class="btn btn-default btn-lg" id="myBtn1"><span class="glyphicon glyphicon-log-in"></span> Signup</button></p> -->
               <p>Not a customer? Join us! Today <a href="register.php"> Sign up</a></p>
               <p>Forgot <a href="#">Password?</a></p>
             </div>
@@ -212,13 +208,13 @@
 <div id="pricing" class="container-fluid">
   <div class="text-center">
     <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
+    <h4>Bundle purchase for fresh items available at Farmable</h4>
   </div>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>SILVER</h1>
+          <h1>Vegetables</h1>
         </div>
         <div class="panel-body">
           <p><strong>BENEFIT 1 - Products 1</strong> SHORT DESCRIPTION 1</p>
@@ -229,15 +225,15 @@
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS 1</h3>
-          <p>per month</p>
-          <button class="btn btn-lg">Sign Up</button>
+          <p>Limited Time Offer</p>
+          <button class="btn btn-lg">Purchase</button>
         </div>
       </div>
     </div>
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>GOLD</h1>
+          <h1>Fruits</h1>
         </div>
         <div class="panel-body">
           <p><strong>BENEFIT 2 - Products 2</strong> SHORT DESCRIPTION 2</p>
@@ -248,15 +244,15 @@
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>
-          <p>per month</p>
-          <button class="btn btn-lg">Sign Up</button>
+          <p>Limited Time Offer</p>
+          <button class="btn btn-lg">Purchase</button>
         </div>
       </div>
     </div>
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>PLATINUM</h1>
+          <h1>Meats</h1>
         </div>
         <div class="panel-body">
           <p><strong>BENEFIT 3 - Products 3</strong> SHORT DESCRIPTION 3</p>
@@ -267,10 +263,10 @@
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>
-          <p>per month</p>
+          <p>Limited Time Offer</p>
           <!-- WILL WORK ON IT LATER -->
           <a name="product" onClick="return testSignUp()" id="productP">
-          <button class="btn btn-lg">Sign Up</button>
+          <button class="btn btn-lg">Purchase</button>
           </a>
         </div>
       </div>
@@ -313,7 +309,9 @@
 </div>
 </form>
 <!-- Just need to get Google Maps API and edit it into the src link, it'll work -->
-<iframe  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDz_1Rk4az74eXiXXKUyC3VHcsSA4q7Q6o&amp;q=Swinburne+University,Kuching+Sarawak;" allowfullscreen="" id="map">	</iframe>
+<!-- Google Maps should go here -->
+
+<!-- <iframe  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDz_1Rk4az74eXiXXKUyC3VHcsSA4q7Q6o&amp;q=Swinburne+University,Kuching+Sarawak;" allowfullscreen="" id="map">	</iframe> -->
 
 <!-- Include javascript file here  -->
 <script src="js/script.js" type="text/javascript"></script>

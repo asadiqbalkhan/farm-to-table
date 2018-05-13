@@ -27,6 +27,7 @@
         <div class="row">
           <div class="col-sm-4">
             <span class="glyphicon glyphicon-user logo slideanim"></span>
+            <p>Purchasing and providing organic products for your family from <strong>Farmable</strong> is not only a lifestyle!, Sign up today and be a part of our family.</p>
           </div>
         <div class="col-sm-8">
           <form class="form-horizontal" action="reg.php" method="POST">

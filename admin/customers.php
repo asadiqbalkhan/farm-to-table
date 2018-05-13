@@ -1,3 +1,10 @@
+<?php
+ include_once("connection.php");
+ session_start();
+ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
+                 header ("Location: login.php");
+             }
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -36,7 +43,7 @@
             <!--navbar top-->
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand pull-left" href="index.html">
+                <a class="navbar-brand pull-left" href="index.php">
                     <br>
                     <h2>Farmable</h2>
                 </a>
@@ -122,7 +129,7 @@
                             <i class="fa fa-table"></i>
                         </div>
                         <div class="header-title">
-                            <h1> Inventory</h1>
+                            <h1>Customers</h1>
 
                             <ul class="link hidden-xs">
                                 <li><a href="index.php"><i class="fa fa-home"></i>Home</a></li>
@@ -143,9 +150,8 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Select</th>
-                                                        <th>Order ID</th>
-                                                        <th>Fell Name </th>
-                                                        <th>Email </th>
+                                                        <th>Customer ID</th>
+                                                        <th>Customer Email</th>
                                                         <th>Place Date</th>
                                                         <th>Pickup Date </th>
                                                         <th>Delivery Date</th>
@@ -155,114 +161,9 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="checkbox" id="test1" />
-                                                            <label for="test1"></label>
-                                                        </td>
-                                                        <td>JS325</td>
-                                                        <td>Naeem Khan</td>
-                                                        <td>naeem@gmail.com</td>
-                                                        <td>30.05.1016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>Complete</td>
-                                                        <td>$43</td>
-                                                        <td>
-                                                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="checkbox" id="test2" />
-                                                            <label for="test2"></label>
-                                                        </td>
-                                                        <td>JS325</td>
-                                                        <td>Naeem Khan</td>
-                                                        <td>bdtask@gmail.com</td>
-                                                        <td>30.05.1016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>Complete</td>
-                                                        <td>$43</td>
-                                                        <td>
-                                                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="checkbox" id="test3" />
-                                                            <label for="test3"></label>
-                                                        </td>
-                                                        <td>JS325</td>
-                                                        <td>Mark</td>
-                                                        <td>admin@gmail.com</td>
-                                                        <td>30.05.1016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>Complete</td>
-                                                        <td>$43</td>
-                                                        <td>
-                                                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="checkbox" id="test4" />
-                                                            <label for="test4"></label>
-                                                        </td>
-                                                        <td>JS325</td>
-                                                        <td>Abraham</td>
-                                                        <td>admin@gmail.com</td>
-                                                        <td>30.05.1016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>Complete</td>
-                                                        <td>$43</td>
-                                                        <td>
-                                                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="checkbox" id="test5" />
-                                                            <label for="test5"></label>
-                                                        </td>
-                                                        <td>JS325</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>admin@gmail.com</td>
-                                                        <td>30.05.1016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>Complete</td>
-                                                        <td>$43</td>
-                                                        <td>
-                                                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="checkbox" id="test6" />
-                                                            <label for="test6"></label>
-                                                        </td>
-                                                        <td>JS325</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>admin@gmail.com</td>
-                                                        <td>30.05.1016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>10.06.2016</td>
-                                                        <td>Complete</td>
-                                                        <td>$43</td>
-                                                        <td>
-                                                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                                        </td>
-                                                    </tr>
+              <!-- PHP code starts here populate the table of customers from the database -->
+
+              <!-- PHP code ends here here  -->
                                                 </tbody>
                                             </table>
                                         </div>

@@ -42,7 +42,7 @@
             <!--navbar top-->
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand pull-left" href="index.html">
+                <a class="navbar-brand pull-left" href="index.php">
                     <br>
                     <h2>Farmable</h2>
                 </a>
@@ -137,15 +137,13 @@
                             </ul>
                         </div>
                     </section>
-                    <?php
-
-
-                    if($_GET['flag'] == 1){ ?>
-                      <div class="alert alert-success" role="alert">
-  Item is successfully removed
-</div>
-<?php        }
-
+                  <?php
+                  $flagsuccess = $_GET['flag'];
+                    if($flagsuccess == 1){?>
+                  <div class="alert alert-success" role="alert">
+                    Item is successfully removed
+                  </div>
+<?php }
                     ?>
                             <!-- bootstrap table -->
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -169,9 +167,9 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                  <?php
-        $query1= "SELECT * FROM inventory";
-
+<!-- Display Database results -->
+<?php
+    $query1= "SELECT * FROM inventory";
     $result1 = mysqli_query($connection, $query1);
       while ($row1 = mysqli_fetch_assoc($result1))
         { ?>
@@ -187,25 +185,21 @@
               <td><?php echo $row1["itemQuantity"]; ?></td>
               <td>
               <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
-                                                        </td>
+              <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete.php?id=<?php echo $row1["user_ID"]; ?>';"></i></button>
+                                                      </td>
                                                     </tr>
                                                   <?php } ?>
-
-
-                                                </tbody>
+                                              </tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <!-- ./data table -->
                         </div>
                         <!-- ./row -->
                     </div>
-                    <!-- ./cotainer -->
-
+                    <!-- ./container -->
                 </div>
                 <!-- ./page-content -->
             </div>

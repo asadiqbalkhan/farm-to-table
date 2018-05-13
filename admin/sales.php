@@ -1,8 +1,11 @@
 <?php
  include_once("connection.php");
+ session_start();
+ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
+                 header ("Location: login.php");
+             }
 ?>
 <!DOCTYPE html>
-
 <html lang="en">
     <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +42,7 @@
             <!--navbar top-->
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand pull-left" href="index.html">
+                <a class="navbar-brand pull-left" href="index.php">
                     <br>
                     <h2>Farmable</h2>
                 </a>
@@ -105,8 +108,6 @@
                                     <li><a href="addusers.php">Add users</a></li>
                                 </ul>
                             </li>
-
-
                             <li class="side-last"></li>
                         </ul>
                         <!-- ./sidebar-nav -->
@@ -125,7 +126,7 @@
                             <i class="fa fa-table"></i>
                         </div>
                         <div class="header-title">
-                            <h1> Inventory</h1>
+                            <h1>Sales Information</h1>
 
                             <ul class="link hidden-xs">
                                 <li><a href="index.php"><i class="fa fa-home"></i>Home</a></li>
@@ -147,7 +148,7 @@
                                                     <tr>
                                                         <th>Select</th>
                                                         <th>Order ID</th>
-                                                        <th>Fell Name </th>
+                                                        <th>User name </th>
                                                         <th>Email </th>
                                                         <th>Place Date</th>
                                                         <th>Pickup Date </th>
@@ -155,7 +156,8 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                            <?php
+    <!-- PHP goes here to display data from the database in the Sales table -->
+    <?php
     $query1= "SELECT * FROM sales";
     $result1 = mysqli_query($connection, $query1);
       while ($row1 = mysqli_fetch_assoc($result1))
@@ -165,31 +167,31 @@
                   <input type="checkbox" id="test1" />
                   <label for="test1"></label>
               </td>
-              <td><?php echo $row1["itemID"]; ?></td>
-              <td><?php echo $row1["itemName"]; ?></td>
+              <td><?php echo $row1["salesID"]; ?></td>
               <td><?php echo $row1["itemCategory"]; ?></td>
-              <td><?php echo $row1["itemPrice"]; ?></td>
+              <td><?php echo $row1["itemName"]; ?></td>
               <td><?php echo $row1["itemQuantity"]; ?></td>
+              <td><?php echo $row1["itemID"]; ?></td>
+              <td><?php echo $row1["date"]; ?></td>
+              <td><?php echo $row1["time"]; ?></td>
               <td>
               <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
+              <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
                                                         </td>
                                                     </tr>
                                                   <?php } ?>
-
+                        <!-- PHP ends here -->
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <!-- ./data table -->
                         </div>
                         <!-- ./row -->
                     </div>
                     <!-- ./cotainer -->
-
                 </div>
                 <!-- ./page-content -->
             </div>
@@ -259,5 +261,4 @@
             });
         </script>
     </body>
-
 </html>

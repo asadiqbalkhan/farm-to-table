@@ -43,7 +43,7 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
             <!--navbar top-->
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand pull-left" href="index.html">
+                <a class="navbar-brand pull-left" href="index.php">
                     <br>
                     <h2>Farmable</h2>
                 </a>
@@ -132,8 +132,8 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                             <h1> Dashboard</h1>
                             <small> Dashboard features</small>
                             <ul class="link hidden-xs">
-                                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-                                <li><a href="index.html">Dashboard</a></li>
+                                <li><a href="index.php"><i class="fa fa-home"></i>Home</a></li>
+                                <li><a href="index.php">Dashboard</a></li>
                             </ul>
                         </div>
                     </section>

@@ -41,7 +41,7 @@
               <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
             </div>
             <div class="modal-body" style="padding:40px 50px;">
-              <form role="form">
+              <form role="form" action="loginuser.php" method="POST">
                 <img src="img/cheflogo.png" alt="Avatar" class="center">
                 <div class="form-group">
                   <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
@@ -58,11 +58,11 @@
               </form>
             </div>
             <div class="modal-footer">
-              <p>Not a member? <a href="#">Sign Up</a></p>
+              <!-- <p>Not a member? <button type="button" class="btn btn-default btn-lg" id="myBtn1"><span class="glyphicon glyphicon-log-in"></span> Signup</button></p> -->
+              <p>Not a customer? Join us! Today <a href="register.php"> Sign up</a></p>
               <p>Forgot <a href="#">Password?</a></p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
             $("#myModal").modal();
         });
     });
-    </script>
+  </script>
       <!-- TEST ENDS HERE -->
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-grain logo"></span>

@@ -1,4 +1,4 @@
-<?php include_once('database/db.php'); ?>
+
 <!-- Header PHP -->
 <head>
   <title>Farmable</title>

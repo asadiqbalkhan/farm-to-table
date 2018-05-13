@@ -11,7 +11,7 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
     <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Farmable Admin panel</title>
+        <title>Farmable 1337 Admin Panel</title>
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="assets/dist/img/ico/fav.png">
         <!-- Start Global Mandatory Style

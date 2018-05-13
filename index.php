@@ -41,7 +41,7 @@
               <form role="form" action="loginuser.php" method="POST">
                 <img src="img/cheflogo.png" alt="Avatar" class="center">
                 <div class="form-group">
-                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                  <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email</label>
                   <input type="text" class="form-control" id="username" placeholder="Enter email">
                 </div>
                 <div class="form-group">

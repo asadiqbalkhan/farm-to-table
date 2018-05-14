@@ -86,26 +86,26 @@
                             <li>
                                 <a><i class="material-icons"></i>Products<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="inventory.php"> Inventory</a></li>
+                                    <li><a href="inventory.php?flag=0"> Inventory</a></li>
                                     <li><a href="addproducts.php">Add Product</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="material-icons">text_format</i> Sales<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="sales.php">Sales info</a></li>
+                                    <li><a href="sales.php?flag=0">Sales info</a></li>
                                     <li><a href="addsales.php">Add sales </a></li>
                                 </ul>
                             </li>
                             <li><a><i class="material-icons">business</i>Customers<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="customers.php">
+                                    <li><a href="customers.php?flag=0">
                                     Customers</a></li>
                                     <li><a href="addcustomers.php">Add Customers</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="material-icons">business</i>Users<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="users.php">User list</a></li>
+                                    <li><a href="users.php?flag=0">User list</a></li>
                                     <li><a href="addusers.php">Add users</a></li>
                                 </ul>
                             </li>

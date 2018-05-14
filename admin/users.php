@@ -137,6 +137,14 @@
                             </ul>
                         </div>
                     </section>
+                    <?php
+                    // flag it
+                    if($_GET['flag'] == 2){?>
+                      <div class="alert alert-success" role="alert">
+                        User is successfully removed
+                      </div>
+                  <?php }
+                     ?>
                             <!-- bootstrap table -->
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
@@ -176,7 +184,7 @@
                     <td><?php echo $row1["userType"]; ?></td>
                     <td>
                     <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                    <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
+                    <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_users_user.php?id=<?php echo $row1["user_ID"]; ?>';"></i></button>
                             </td>
                         </tr>
                                                         <?php } ?>

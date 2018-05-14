@@ -138,12 +138,12 @@
                         </div>
                     </section>
                   <?php
-                  $flagsuccess = $_GET['flag'];
-                    if($flagsuccess == 1){?>
+                //  $flagsuccess = $_GET['flag'];
+                    if($_GET['flag'] == 1){?>
                   <div class="alert alert-success" role="alert">
                     Item is successfully removed
                   </div>
-<?php }
+                <?php }
                     ?>
                             <!-- bootstrap table -->
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -185,7 +185,7 @@
               <td><?php echo $row1["itemQuantity"]; ?></td>
               <td>
               <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete.php?id=<?php echo $row1["user_ID"]; ?>';"></i></button>
+              <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_inv_item.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
                                                       </td>
                                                     </tr>
                                                   <?php } ?>

@@ -86,26 +86,26 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                             <li>
                                 <a><i class="material-icons"></i>Products<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="inventory.php"> Inventory</a></li>
+                                    <li><a href="inventory.php?flag=0"> Inventory</a></li>
                                     <li><a href="addproducts.php">Add Product</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="material-icons">text_format</i> Sales<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="sales.php">Sales info</a></li>
+                                    <li><a href="sales.php?flag=0">Sales info</a></li>
                                     <li><a href="addsales.php">Add sales </a></li>
                                 </ul>
                             </li>
                             <li><a><i class="material-icons">business</i>Customers<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="customers.php">
+                                    <li><a href="customers.php?flag=0">
                                     Customers</a></li>
                                     <li><a href="addcustomers.php">Add Customers</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="material-icons">business</i>Users<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li><a href="users.php">User list</a></li>
+                                    <li><a href="users.php?flag=0">User list</a></li>
                                     <li><a href="addusers.php">Add users</a></li>
                                 </ul>
                             </li>
@@ -146,8 +146,12 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                         <a class="refresh" href="#">
                                             <span class="fa fa-refresh"></span>
                                         </a>
+                           <?php             $query1= "SELECT count(*) as yo FROM `users`";
+    $result1 = mysqli_query($connection, $query1);
+      while ($row1 = mysqli_fetch_assoc($result1))
+        { ?>
                                         <div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
-                                        <div class="timer" data-to="2" data-speed="1500">0</div>
+                                        <div class="timer" data-to="<?php echo $row1["yo"]; }?>" data-speed="1500">0</div>
                                         <div class="cardbox-icon">
                                             <i class="material-icons">directions_run</i>
                                         </div>
@@ -164,7 +168,7 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                             <span class="fa fa-refresh"></span>
                                         </a>
                                         <div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
-                                        <div class="timer" data-to="5" data-speed="1500">0</div>
+                                        <div class="timer" data-to="0" data-speed="1500">0</div>
                                         <div class="cardbox-icon">
                                             <i class="material-icons">supervisor_account</i>
                                         </div>
@@ -181,8 +185,12 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                         <a class="refresh2" href="#">
                                             <span class="fa fa-refresh"></span>
                                         </a>
+                                        <?php             $query2= "SELECT count(*) as yo FROM `inventory`";
+    $result2 = mysqli_query($connection, $query2);
+      while ($row2 = mysqli_fetch_assoc($result2))
+        { ?>
                                         <div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
-                                        <div class="timer" data-to="5" data-speed="1500">0</div>
+                                        <div class="timer" data-to="<?php echo $row2["yo"]; }?>" data-speed="1500">0</div>
                                         <div class="cardbox-icon">
                                             <i class="material-icons">visibility</i>
                                         </div>
@@ -211,9 +219,10 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                     </div>
                                 </div>
                             </div>
+                            <!-- BAR CHART -->
                             <!-- ./counter Number -->
                             <!-- chart -->
-                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <!-- <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-header">
                                         <i class="fa fa-bar-chart fa-lg"></i>
@@ -223,8 +232,9 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                         <canvas id="lineChart" height="150"></canvas>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- ./chart -->
+
                             <!-- Calender -->
                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="card">

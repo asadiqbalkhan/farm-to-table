@@ -19,7 +19,6 @@
         <li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT US</a></li>
         <li><a href="#"  id="myBtn"><span class="glyphicon glyphicon-log-in"></span>LOG IN</a></li>
-      </ul>
     </div>
   </div>
 </nav>

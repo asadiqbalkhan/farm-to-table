@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group">
                   <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                  <input type="text" class="form-control" id="password" placeholder="Enter password">
+                  <input type="password" class="form-control" id="password" placeholder="Enter password">
                 </div>
                 <div class="checkbox">
                   <label><input type="checkbox" value="" checked>Remember me</label>

@@ -151,7 +151,7 @@
                                         <form action="addprod.php" name="myform" id="myForm" method="POST">
                                           <div class="form-row">
                                             <div class="form-group col-md-6">
-                                              <label for="inputEmail4">Prodct Name</label>
+                                              <label for="inputEmail4">Product Name</label>
                                               <input type="text" class="form-control" id="product" name="product" placeholder="Product Name">
                                             </div>
                                             <div class="form-group col-md-6">

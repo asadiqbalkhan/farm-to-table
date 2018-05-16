@@ -51,7 +51,12 @@
                 <div class="checkbox">
                   <label><input type="checkbox" value="" checked>Remember me</label>
                 </div>
-                  <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                  <button type="submit" class="btn btn-success btn-block" onClick="Login()"><span class="glyphicon glyphicon-off"></span> Login</button>
+                  <script>
+                  function Login(){
+                    alert("Successfully Logged In at Farmable!");
+                  }
+                  </script>
               </form>
             </div>
             <div class="modal-footer">

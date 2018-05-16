@@ -1,10 +1,11 @@
+<?php include_once("connection.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Include php files here for header and navigation -->
 <?php include_once 'include/header.php'; ?>
-<?php include_once 'include/navigation_loggedin.php'; ?>
+<?php include_once 'include/navigation_loggedin_user.php'; ?>
 <!-- ============================================ -->
-<!--       BODY OF THE 'myPage' PAGE              -->
+<!--       BODY OF THE 'loginuser' PAGE              -->
 <!-- ============================================ -->
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">

@@ -38,10 +38,19 @@
               <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
             </div>
             <div class="modal-body" style="padding:40px 50px;">
-              <form role="form" action="loginuser.php" method="POST">
+              <!-- Form to Sign up the user/admin -->
+                <!-- Check user login UserType -->
+                <!-- NOTES for Lee: Technically the form action should be action="logincheck.php"
+                  // and if the conditions are met user/admin should be directed to their respective
+                  // locations on the website for.
+                  // if userType == 'admin' -> loginadmin.php
+                  // if userType == 'user'  -> loginuser.php
+                  -->
+              <form role="form" action="logincheck.php" method="POST">
+                <!-- Remove this after processing , added action="loginadmin.php" just to make it have no errors atm-->
                 <img src="img/cheflogo.png" alt="Avatar" class="center">
                 <div class="form-group">
-                  <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+                  <label id="email" name="email" for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email</label>
                   <input type="text" class="form-control" id="username" placeholder="Enter email">
                 </div>
                 <div class="form-group">

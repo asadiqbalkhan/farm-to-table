@@ -162,7 +162,7 @@
                                                 </thead>
                                                 <tbody>
               <!-- PHP code starts here populate the table of customers from the database -->
-
+              
               <!-- PHP code ends here here  -->
                                                 </tbody>
                                             </table>

@@ -33,14 +33,14 @@
           <form class="form-horizontal" action="reg.php" method="POST">
               <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
+                <div class="col-sm-4">
                   <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                 </div>
             </div>
             <!-- Username field -->
           <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Username:</label>
-                <div class="col-sm-10">
+                <div class="col-sm-4">
                   <input type="text" class="form-control" id="username"
                   name="username" placeholder="Enter your user name">
                 </div>
@@ -48,7 +48,7 @@
           <!-- Password field -->
           <div class="form-group">
               <label class="control-label col-sm-2" for="email">Password:</label>
-                <div class="col-sm-10">
+                <div class="col-sm-4">
                   <input type="password" class="form-control" id="password" name="password" placeholder="****************">
                 </div>
               </div>

@@ -18,8 +18,7 @@
         <li><a href="#portfolio">PRODUCTS</a></li>
         <li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT US</a></li>
-        <li><a href="#"  id="myBtn"><span class="glyphicon glyphicon-log-in"></span>LOG IN</a></li>
-          <!-- User logged in session starts here -->
+        <!-- User logged in session starts here -->
         <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -31,11 +30,6 @@
                       <li>
                           <div class="navbar-login">
                               <div class="row">
-                                  <!-- <div class="col-lg-4">
-                                      <p class="text-center">
-                                          <span class="glyphicon glyphicon-user icon-size"></span>
-                                      </p>
-                                  </div> -->
                                   <div class="col-lg-12">
                                       <p class="text-center"><strong>User</strong></p>
                                       <!-- Only show admin panel if UserType is admin STARTS HERE -->
@@ -58,7 +52,7 @@
                                       </p>
                                       <script>
                                       function Logout(){
-                                        alert("You are now logged out of Farmable!\n We hope to see you again soon!");
+                                      alert("You are now logged out of Farmable!\n We hope to see you again soon!");
                                       }
                                       </script>
                                   </div>

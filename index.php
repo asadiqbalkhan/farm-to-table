@@ -182,18 +182,22 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>"If you want to buy the best meat in town!Farmable is the platform to purchase it from!"<br><span>Michael Roe, Vice President, Food Street Kuching</span></h4>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+        <h4>"One word... WOW!! They definitely provided the platform to purchase all your organic foods!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+        <h4>"I feel safe purchasing organic grown products at Farmable, farms and I know for sure that"<br><span>Michelle Tan, House Mom</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Farmable truly provides visibility for their users, I had the privelage of visiting their farms and I must say, I was astonished at how professional they are at what they do!"<br><span>Krystal Li, Director of Food Authority, Government</span></h4>
       </div>
     </div>
 

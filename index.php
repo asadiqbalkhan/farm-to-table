@@ -234,6 +234,32 @@
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Vegetables</h1>
+          <!--  carousel for vegetable-->
+          <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <h4>"Fresh Bidin!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Choysam!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh RedOnion!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Kangkung!"</h4>
+              </div>
+            </div>
+          </div>
+          <!-- carousel ends here for vegetables -->
         </div>
         <div class="panel-body">
           <p><strong>Bidin</strong>--</p>
@@ -257,6 +283,32 @@
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Fruits</h1>
+          <!--  carousel for Fruits-->
+          <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <h4>"Fresh Oranges!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Apples!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Mangosteen!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Papaya!"</h4>
+              </div>
+            </div>
+          </div>
+          <!-- carousel ends here for fruits -->
         </div>
         <div class="panel-body">
           <p><strong>Orange</strong> --</p>
@@ -280,6 +332,32 @@
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Meats</h1>
+          <!--  carousel for meats-->
+          <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <h4>"Fresh Beef!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Chicken!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Mutton!"</h4>
+              </div>
+              <div class="item">
+                <h4>"Fresh Lamb!"</h4>
+              </div>
+            </div>
+          </div>
+          <!-- carousel ends here for meats -->
         </div>
         <div class="panel-body">
           <p><strong> Beef </strong> -- </p>

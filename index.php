@@ -236,11 +236,14 @@
           <h1>Vegetables</h1>
         </div>
         <div class="panel-body">
-          <p><strong>BENEFIT 1 - Products 1</strong> SHORT DESCRIPTION 1</p>
-          <p><strong>BENEFIT 1 - Products 1</strong> SHORT DESCRIPTION 1</p>
-          <p><strong>BENEFIT 1 - Products 1</strong> SHORT DESCRIPTION 1</p>
-          <p><strong>BENEFIT 1 - Products 1</strong> SHORT DESCRIPTION 1</p>
-          <p><strong>BENEFIT 1 - Products 1</strong> SHORT DESCRIPTION 1</p>
+          <p><strong>Bidin</strong>--</p>
+          <img src="img/bidin.jpg">
+          <p><strong>Choysam</strong>--</p>
+          <img src="img/choysam.jpg">
+          <p><strong>Red onions</strong>--</p>
+          <img src="img/redonions.jpg">
+          <p><strong>Kangkung</strong>--</p>
+          <img src="img/kangkung.jpg">
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS 1</h3>
@@ -256,11 +259,14 @@
           <h1>Fruits</h1>
         </div>
         <div class="panel-body">
-          <p><strong>BENEFIT 2 - Products 2</strong> SHORT DESCRIPTION 2</p>
-          <p><strong>BENEFIT 2 - Products 2</strong> SHORT DESCRIPTION 2</p>
-          <p><strong>BENEFIT 2 - Products 2</strong> SHORT DESCRIPTION 2</p>
-          <p><strong>BENEFIT 2 - Products 2</strong> SHORT DESCRIPTION 2</p>
-          <p><strong>BENEFIT 2 - Products 2</strong> SHORT DESCRIPTION 2</p>
+          <p><strong>Orange</strong> --</p>
+          <img src="img/oranges.jpg">
+          <p><strong>Apple</strong> --</p>
+          <img src="img/apple.jpg">
+          <p><strong>Mangosteen</strong> --</p>
+          <img src="img/mangosteen.jpg">
+          <p><strong>Papaya</strong> --</p>
+          <img src="img/papaya.jpg">
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>
@@ -276,11 +282,14 @@
           <h1>Meats</h1>
         </div>
         <div class="panel-body">
-          <p><strong>BENEFIT 3 - Products 3</strong> SHORT DESCRIPTION 3</p>
-          <p><strong>BENEFIT 3 - Products 3</strong> SHORT DESCRIPTION 3</p>
-          <p><strong>BENEFIT 3 - Products 3</strong> SHORT DESCRIPTION 3</p>
-          <p><strong>BENEFIT 3 - Products 3</strong> SHORT DESCRIPTION 3</p>
-          <p><strong>BENEFIT 3 - Products 3</strong> SHORT DESCRIPTION 3</p>
+          <p><strong> Beef </strong> -- </p>
+          <img src="img/beef_2.jpg"></img>
+          <p><strong> Chicken </strong> --</p>
+          <img src="img/chicken.jpg"></img>
+          <p><strong> Mutton </strong> --</p>
+          <img src="img/mutton.jpg"></img>
+          <p><strong> Lamb </strong> --</p>
+          <img src="img/lamb.jpg"></img>
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>

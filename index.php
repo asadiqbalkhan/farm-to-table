@@ -229,6 +229,7 @@
     <h4>Bundle purchase for fresh items available at Farmable</h4>
   </div>
   <div class="row slideanim">
+    <!-- VEGETABLES SECTION -->
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
@@ -248,6 +249,7 @@
         </div>
       </div>
     </div>
+    <!-- FRUITS SECTION -->
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
@@ -267,6 +269,7 @@
         </div>
       </div>
     </div>
+    <!-- MEATS SECTION -->
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
@@ -283,14 +286,99 @@
           <h3>PRICE DETAILS</h3>
           <p>Limited Time Offer</p>
           <!-- WILL WORK ON IT LATER -->
-          <a name="product" onClick="return testSignUp()" id="productP">
-          <button class="btn btn-lg">Purchase</button>
+          <a name="product"  id="productP">
+          <button class="btn btn-lg" id="purchase_meat">Purchase</button>
           </a>
         </div>
       </div>
     </div>
   </div>
 </div>
+  <!-- Modal Shopping Cart content for purchasing an Meats-->
+  <div class="modal fade" id="shop" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-shopping-cart"></span>Purchase Meats</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <div class="table-responsive">
+              <table class="table table-bordered table-hover">
+                                                    <thead>
+                                                              <tr>
+                                                                  <th>Select</th>
+                                                                  <th>Item name</th>
+                                                                  <th>Unit Price</th>
+                                                                  <th>Quantity</th>
+                                                                  <th></th>
+                                                              </tr>
+                                                          </thead>
+                                                  <!-- ============================================= -->
+                                                  <!--   DUMMY MODAL SHOPPING CART  STARTS HERE      -->
+                                                  <!-- ============================================= -->
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td>
+                                                                      <input type="checkbox" id="test1" />
+                                                                      <label for="test1"></label>
+                                                                  </td>
+                                                                  <td>Chicken</td>
+                                                                  <td>RM 8</td>
+                                                                  <td>100</td>
+                                                                  <td>
+                                                                      <button  data-toggle="tooltip" data-placement="left" title="Update"><img src="img/plus.png"></button>
+                                                                      <button data-toggle="tooltip" data-placement="right" title="Delete "><img src="img/subtract.png"></button>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td>
+                                                                      <input type="checkbox" id="test1" />
+                                                                      <label for="test1"></label>
+                                                                  </td>
+                                                                  <td>Beef</td>
+                                                                  <td>RM 10</td>
+                                                                  <td>10</td>
+                                                                  <td>
+                                                                      <button  data-toggle="tooltip" data-placement="left" title="Update"><img src="img/plus.png"></button>
+                                                                      <button data-toggle="tooltip" data-placement="right" title="Delete "><img src="img/subtract.png"></button>
+                                                                  </td>
+                                                              </tr>
+                                                  <div class="modal-footer">
+                                        </div>
+                              </tbody>
+                      </table>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <tr class="active lead">
+            <td colspan="4">Total</td>
+            </td> RM 500.00 </td>
+            <br>
+            <br>
+            <td><a href="#" class="btn btn-danger btn-sm">Clear all</a>
+            </td>
+          </tr>
+        <a href="#" class="btn btn-default" data-dismiss="modal">Continue</a>
+          <button type="button" class="btn btn-success" data-dismiss="modal" class="glyphicon glyphicon-chevron-right">Check out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS for the modal -->
+<script>
+$(document).ready(function(){
+    $("#purchase_meat").click(function(){
+        $("#shop").modal();
+    });
+});
+</script>
+<!-- ============================================= -->
+<!--   DUMMY MODAL SHOPPING CART ENDS HERE         -->
+<!-- ============================================= -->
+
 
 <!-- Container (Contact Section) -->
 <form name="enquiry_form" action="database/enquiry_process.php" method="POST">

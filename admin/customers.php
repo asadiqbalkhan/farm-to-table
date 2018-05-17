@@ -152,17 +152,33 @@
                                                         <th>Select</th>
                                                         <th>Customer ID</th>
                                                         <th>Customer Email</th>
-                                                        <th>Place Date</th>
-                                                        <th>Pickup Date </th>
-                                                        <th>Delivery Date</th>
-                                                        <th>Status </th>
-                                                        <th>Price </th>
+                                                        <th>Customer Name</th>
+                                                        <th>Customer Order </th>
                                                         <th>Update</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
               <!-- PHP code starts here populate the table of customers from the database -->
-              
+              <?php
+                  $query1= "SELECT * FROM customer";
+                  $result1 = mysqli_query($connection, $query1);
+                    while ($row1 = mysqli_fetch_assoc($result1))
+                      { ?>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="test1" />
+                                <label for="test1"></label>
+                            </td>
+                            <td><?php echo $row1["customerID"]; ?></td>
+                            <td><?php echo $row1["customerName"]; ?></td>
+                            <td><?php echo $row1["customerEmail"]; ?></td>
+                            <td><?php echo $row1["customerOrder"]; ?></td>
+                            <td>
+                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_inv_item.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
+                                                                    </td>
+                                                                  </tr>
+                                                                <?php } ?>
               <!-- PHP code ends here here  -->
                                                 </tbody>
                                             </table>

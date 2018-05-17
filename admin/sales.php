@@ -147,11 +147,13 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Select</th>
-                                                        <th>Order ID</th>
-                                                        <th>User name </th>
-                                                        <th>Email </th>
-                                                        <th>Place Date</th>
-                                                        <th>Pickup Date </th>
+                                                        <th>Sale ID</th>
+                                                        <th>Item Category</th>
+                                                        <th>Item Name</th>
+                                                        <th>Item Quantity</th>
+                                                        <th>Item ID</th>
+                                                        <th>Sale Date</th>
+                                                        <th>Sale Time</th>
                                                         <th>Update</th>
                                                     </tr>
                                                 </thead>
@@ -176,7 +178,7 @@
               <td><?php echo $row1["time"]; ?></td>
               <td>
               <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
+              <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_sales_sale.php?id=<?php echo $row1["salesID"]; ?>';"></i></button>
                                                         </td>
                                                     </tr>
                                                   <?php } ?>

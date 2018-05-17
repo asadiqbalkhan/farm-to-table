@@ -8,6 +8,17 @@ include_once("connection.php");
 
 		$query= "INSERT INTO users(email, username, password, userType) VALUES ('".$_POST["email"]."','".$_POST["username"]."','".$_POST["password"]."','user')";
 
+    $.confirm({
+        title: 'Congratulations!',
+        content: 'You have successfully registered at Farmable',
+        buttons: {
+            confirm: function () {
+                $.alert('Welcome!');
+            },
+            }
+        }
+    });
+
         if (mysqli_query($connection, $query)) {
              echo "<div>
                 <script>

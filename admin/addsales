@@ -148,13 +148,13 @@
                                     <div class="card-content">
                                         <div class="table-responsive">
                                           <!-- Form to add products starts here  -->
-                                        <form action="add_sale.php" name="myform" id="myForm" method="POST">
+                                        <form action="add_user.php" name="myform" id="myForm" method="POST">
                                           <div class="form-row">
 
                                             <div class="form-group col-md-4">
                                               <label for="inputState">Item Category</label>
                                               <select id="itemCategory" name="itemCategory" class="form-control">
-                                                <option selected>Item Category</option>
+                                                <option selected>Select the Item Category</option>
                                                 <option>Vegetable</option>
                                                 <option>Fruit</option>
                                                 <option>Meat</option>

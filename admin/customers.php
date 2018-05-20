@@ -146,7 +146,7 @@
                                     </div>
                                     <div class="card-content">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered table-hover" id="dataTableExample1">
                                                 <thead>
                                                     <tr>
                                                         <th>Select</th>
@@ -166,7 +166,7 @@
                       { ?>
                         <tr>
                             <td>
-                                <input type="checkbox" id="test1" />
+                                <input type="checkbox" id="test1" class="selectAl" />
                                 <label for="test1"></label>
                             </td>
                             <td><?php echo $row1["customerID"]; ?></td>
@@ -260,6 +260,13 @@
                 }
                 return (dtable());
             });
+            $('.selectall').click(function() {
+            if ($(this).is(':checked')) {
+                $('input:checkbox').attr('checked', true);
+            } else {
+                $('input:checkbox').attr('checked', false);
+            }
+        });
         </script>
     </body>
 

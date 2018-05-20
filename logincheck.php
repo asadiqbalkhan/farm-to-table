@@ -8,38 +8,27 @@
 
   if(isset($_POST['email']) || isset($_POST['password'])){
 
-      //  $query ="SELECT * FROM users WHERE  userType ='".$_POST['login_username']."'";
-        $query_userType = "SELECT * FROM `users` WHERE userType = 'super admin'";
+    
+        $query_userType = "SELECT * FROM `users` WHERE email = '".$_POST['email']."'";
         $result = mysqli_query($connection,$query_userType);
         $rows = mysqli_num_rows($result);
         if($rows>0){
           $row = mysqli_fetch_assoc($result);
+          if($row["userType"] === 'super admin'){
+            $name = $row['username'];
+            $_SESSION['name'] = $name;
             $_SESSION['login']= "true";
             header('Location: loginadmin.php');
+          }else{
+            $username = $row['username'];
+            $_SESSION['username'] = $username;
+            $_SESSION['login']= "true";
+            header('Location: loginuser.php');
+          }
         }
         else{
-          echo "testing testing";
-          //header('Location: loginuser.php');
+          echo "<script type='text/javascript'>alert('Incorrect pwd');</script>";
+          header('Location: index.php');
         }
       }
  ?>
-<!-- Second logic to the check  -->
- <?php
-   // $check = mysqli_query("
-   //                       SELECT userType
-   //                       FROM users
-   //                       WHERE username = '"$username"';
-   //                       OR email = '"$email"';
-   //                     ");
-   //                     $rows = mysql_fetch_row($check);
-   //                     if($row[0] == 'super admin'){
-   //
-   //                       session_start();
-   //                       // Redirect the admin to the page from which he can access the ADMIN PANEL in the logged in section in the
-   //                       // ---continue.. navigation bar
-   //                       header("location: loginadmin.php");
-   //                     }
-   //                     else {
-   //                        echo "Error: $sql <br />" . mysqli_error($connection);
-   //                    }
-  ?>

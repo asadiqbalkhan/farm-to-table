@@ -6,6 +6,7 @@
              }
 ?>
 <!DOCTYPE html>
+
 <html lang="en">
     <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,7 +87,7 @@
                                 <a><i class="material-icons"></i>Products<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li><a href="inventory.php?flag=0"> Inventory</a></li>
-                                    <li><a href="addproducts.php">Add Product</a></li>
+                                    <li><a href="addproducts.php?flag=0">Add Product</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="material-icons">text_format</i> Sales<span class="fa arrow"></span></a>
@@ -108,6 +109,8 @@
                                     <li><a href="addusers.php">Add users</a></li>
                                 </ul>
                             </li>
+
+
                             <li class="side-last"></li>
                         </ul>
                         <!-- ./sidebar-nav -->
@@ -126,74 +129,67 @@
                             <i class="fa fa-table"></i>
                         </div>
                         <div class="header-title">
-                            <h1>Sales Information</h1>
+                            <h1>Products</h1>
 
                             <ul class="link hidden-xs">
                                 <li><a href="index.php"><i class="fa fa-home"></i>Home</a></li>
-                                <li><a href="sales.php">Sales</a></li>
+                                <li><a href="addproducts.php">Add products</a></li>
                             </ul>
                         </div>
                     </section>
                             <!-- bootstrap table -->
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-header">
                                         <i class="fa fa-table fa-lg"></i>
-                                        <h2>Responsive table</h2>
+                                        <h2>Edit products</h2>
                                     </div>
                                     <div class="card-content">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover" id="dataTableExample1">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Select All</th>
-                                                        <th>Sale ID</th>
-                                                        <th>Item Category</th>
-                                                        <th>Item Name</th>
-                                                        <th>Item Quantity</th>
-                                                        <th>Item ID</th>
-                                                        <th>Sale Date</th>
-                                                        <th>Sale Time</th>
-                                                        <th>Update</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-    <!-- PHP goes here to display data from the database in the Sales table -->
-    <?php
-    $query1= "SELECT * FROM sales";
-    $result1 = mysqli_query($connection, $query1);
-      while ($row1 = mysqli_fetch_assoc($result1))
-        { ?>
-          <tr>
-              <td>
-                  <input type="checkbox" id="test1"  class="selectall"/>
-                  <label for="test1"></label>
-              </td>
-              <td><?php echo $row1["salesID"]; ?></td>
-              <td><?php echo $row1["itemCategory"]; ?></td>
-              <td><?php echo $row1["itemName"]; ?></td>
-              <td><?php echo $row1["itemQuantity"]; ?></td>
-              <td><?php echo $row1["itemID"]; ?></td>
-              <td><?php echo $row1["date"]; ?></td>
-              <td><?php echo $row1["time"]; ?></td>
-              <td>
-              <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_sales_sale.php?id=<?php echo $row1["salesID"]; ?>';"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                  <?php } ?>
-                        <!-- PHP ends here -->
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                          <!-- Form to edit users -->
+                                          <!-- Send the edited form to updateusers.php -->
+                                        <form action="updateusers.php?id=<?php echo $_GET['id']; ?>" name="myform" id="myForm" method="POST">
+                                          <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                              <?php
+                                              $id = $_GET['id'];
+
+                                              // Select user Id from the database
+                                              $query1 = "Select * FROM users WHERE user_ID = $id ";
+
+                                              $result1 = mysqli_query($connection, $query1);
+                                                while ($row1 = mysqli_fetch_assoc($result1))
+                                                      { ?>
+                                              <label for="inputEmail4">User Name</label>
+                                              <input type="text" class="form-control" id="username" name="username" value="<?php echo $row1["username"];?>" placeholder="User Name">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                              <label for="inputPassword4">User Email</label>
+                                              <input type="text" class="form-control" id="useremail" name="useremail" value="<?php echo $row1["email"];?>" placeholder="User Email">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="inputAddress">User Password</label>
+                                            <input type="text" class="form-control" id="pwd" name="pwd" value="<?php echo $row1["password"];?>" placeholder="User Password">
+                                          </div>
+
+                                          <?php } ?>
+                                          <br>
+                                          <br>
+                                          <input type="button" onclick="myFunction()" class="btn btn-warning" value="Edit">
+                                        </form>
+                                        <!-- Form to add products ends here -->
+                                      </div>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- ./data table -->
                         </div>
                         <!-- ./row -->
                     </div>
                     <!-- ./cotainer -->
+
                 </div>
                 <!-- ./page-content -->
             </div>
@@ -261,13 +257,12 @@
                 }
                 return (dtable());
             });
-            $('.selectall').click(function() {
-            if ($(this).is(':checked')) {
-                $('input:checkbox').attr('checked', true);
-            } else {
-                $('input:checkbox').attr('checked', false);
-            }
-        });
         </script>
     </body>
+
 </html>
+<script>
+  function myFunction() {
+    document.getElementById("myForm").submit();
+}
+</script>

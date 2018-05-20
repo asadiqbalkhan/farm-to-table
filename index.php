@@ -51,7 +51,7 @@
                 <img src="img/cheflogo.png" alt="Avatar" class="center">
                 <div class="form-group">
                   <label id="email" name="email" for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email</label>
-                  <input type="text" class="form-control" id="username" placeholder="Enter email">
+                  <input type="text" class="form-control" name="email" id="username" placeholder="Enter email">
                 </div>
                 <div class="form-group">
                   <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>

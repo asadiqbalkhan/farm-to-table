@@ -1,6 +1,7 @@
 <!-- ============================================ -->
 <!--       NAVIGATION LOGGED USER  IN PHP FILE    -->
 <!-- ============================================ -->
+<?php session_start(); ?>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -31,9 +32,9 @@
                           <div class="navbar-login">
                               <div class="row">
                                   <div class="col-lg-12">
-                                      <p class="text-center"><strong>User</strong></p>
+                                          <p class="text-center"><strong><?php echo "Hello "; ?> </br> <?php echo $_SESSION['username']; ?> </br> <?php echo "Welcome to Farmable!"; ?></strong></p>
                                       <!-- Only show admin panel if UserType is admin STARTS HERE -->
-                                      
+
                                       <!-- Only show admin panel if UserType is admin ENDS HERE -->
                                   </div>
                               </div>

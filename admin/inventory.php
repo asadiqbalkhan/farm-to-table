@@ -155,10 +155,10 @@
                                     </div>
                                     <div class="card-content">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered table-hover" id="dataTableExample1">
                                                 <thead>
                                                     <tr>
-                                                        <th>Select</th>
+                                                        <th>Select All</th>
                                                         <th>Item ID</th>
                                                         <th>Item Name </th>
                                                         <th>Item Category </th>
@@ -176,7 +176,7 @@
         { ?>
           <tr>
               <td>
-                  <input type="checkbox" id="test1" />
+                  <input type="checkbox" id="test1" class="selectall" />
                   <label for="test1"></label>
               </td>
               <td><?php echo $row1["itemID"]; ?></td>
@@ -185,7 +185,7 @@
               <td><?php echo $row1["itemPrice"]; ?></td>
               <td><?php echo $row1["itemQuantity"]; ?></td>
               <td>
-              <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" onclick="location.href='http://localhost/farm/admin/editproduct.php?id=<?php echo $row1["itemID"]; ?>';" aria-hidden="true"></i></button>
               <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_inv_item.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
                                                       </td>
                                                     </tr>
@@ -268,6 +268,13 @@
                 }
                 return (dtable());
             });
+            $('.selectall').click(function() {
+    if ($(this).is(':checked')) {
+        $('input:checkbox').attr('checked', true);
+    } else {
+        $('input:checkbox').attr('checked', false);
+    }
+});
         </script>
     </body>
 

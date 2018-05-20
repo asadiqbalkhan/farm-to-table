@@ -1,6 +1,7 @@
 <!-- ============================================ -->
 <!--       NAVIGATION LOGGED ADMIN IN PHP FILE    -->
 <!-- ============================================ -->
+<?php session_start(); ?>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -31,7 +32,7 @@
                           <div class="navbar-login">
                               <div class="row">
                                   <div class="col-lg-12">
-                                      <p class="text-center"><strong>User</strong></p>
+                                      <p class="text-center"><strong><?php echo "Hello"; ?> </br> <?php echo $_SESSION['name']; ?> </br> <?php echo "1337 - Mode [Enabled]"; ?></strong></p>
                                       <!-- Only show admin panel if UserType is admin STARTS HERE -->
                                       <p class="text-center">
                                           <a href="\farm\admin\index.php" class="btn btn-info btn-block btn-sm">Admin Panel</a>

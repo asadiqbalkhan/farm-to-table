@@ -154,7 +154,7 @@
                                     </div>
                                     <div class="card-content">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered table-hover" id="dataTableExample1">
                                                 <thead>
                                                     <tr>
                                                         <th>select</th>
@@ -175,7 +175,7 @@
               { ?>
                 <tr>
                     <td>
-                        <input type="checkbox" id="test1" />
+                        <input type="checkbox" id="test1" class="selectall" />
                         <label for="test1"></label>
                     </td>
                     <td><?php echo $row1["user_ID"]; ?></td>
@@ -183,7 +183,9 @@
                     <td><?php echo $row1["username"]; ?></td>
                     <td><?php echo $row1["userType"]; ?></td>
                     <td>
-                    <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                      <!-- Button directs you to editusers.php to edit the fields  -->
+                    <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" onclick="location.href='http://localhost/farm/admin/editusers.php?id=<?php echo $row1["user_ID"]; ?>';" aria-hidden="true"></i></button>
+                    <!-- Button deletes the selected row -->
                     <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_users_user.php?id=<?php echo $row1["user_ID"]; ?>';"></i></button>
                             </td>
                         </tr>
@@ -268,6 +270,13 @@
                 }
                 return (dtable());
             });
+            $('.selectall').click(function() {
+            if ($(this).is(':checked')) {
+                $('input:checkbox').attr('checked', true);
+            } else {
+                $('input:checkbox').attr('checked', false);
+            }
+        });
         </script>
     </body>
 

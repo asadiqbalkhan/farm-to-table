@@ -68,7 +68,8 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                     <a href="#!"><i class="material-icons">settings</i> Settings</a>
                                 </li>
                                 <li>
-                                    <a href="logout.php"><i class="material-icons">lock</i> Logout</a>
+                                  <!-- Send Admin back to the main  front end login -->
+                                    <a href="../index.php"><i class="material-icons">lock</i> Logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -161,12 +162,14 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                     </div>
                                 </div>
                             </div>
+                            <!-- Total Users ends here -->
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="panel cardbox bg-success">
                                     <div class="panel-body card-item panel-refresh">
                                         <a class="refresh" href="#">
                                             <span class="fa fa-refresh"></span>
                                         </a>
+
                                         <div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
                                         <div class="timer" data-to="0" data-speed="1500">0</div>
                                         <div class="cardbox-icon">
@@ -179,6 +182,7 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                     </div>
                                 </div>
                             </div>
+                            <!-- Total Customers ends here -->
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="panel cardbox bg-warning">
                                     <div class="panel-body card-item panel-refresh">
@@ -201,12 +205,15 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                     </div>
                                 </div>
                             </div>
+                            <!-- Total Products ends here -->
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="panel cardbox bg-dark">
                                     <div class="panel-body card-item panel-refresh">
                                         <a class="refresh" href="#">
                                             <span class="fa fa-refresh"></span>
                                         </a>
+
+
                                         <div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
                                         <div class="timer" data-to="0" data-speed="1500">0</div>
                                         <div class="cardbox-icon">

@@ -174,8 +174,8 @@
                             <td><?php echo $row1["customerEmail"]; ?></td>
                             <td><?php echo $row1["customerOrder"]; ?></td>
                             <td>
-                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_inv_item.php?id=<?php echo $row1["itemID"]; ?>';"></i></button>
+                            <button class="btn btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/editcustomers.php?id=<?php echo $row1["customerID"]; ?>';"></i></button>
+                            <button class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true" onclick="location.href='http://localhost/farm/admin/delete_customers_customer.php?id=<?php echo $row1["customerID"]; ?>';"></i></button>
                                                                     </td>
                                                                   </tr>
                                                                 <?php } ?>

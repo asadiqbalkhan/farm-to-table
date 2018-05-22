@@ -190,6 +190,7 @@
                                           <br>
                                           <br>
                                           <input type="button" onclick="myFunction()" class="btn btn-warning" value="Edit">
+                                          <input type="button" onclick="cancelFunction()" class="btn btn-warning" value="Cancel">
                                         </form>
                                         <!-- Form to add products ends here -->
                                       </div>
@@ -277,5 +278,8 @@
 <script>
   function myFunction() {
     document.getElementById("myForm").submit();
+}
+function cancelFunction() {
+  document.location.href = 'sales.php';
 }
 </script>

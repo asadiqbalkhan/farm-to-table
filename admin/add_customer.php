@@ -1,8 +1,8 @@
 <?php
 include_once("connection.php");
 
-$query = "INSERT INTO customer(`customerID`, `customerEmail`, `customerName`, `customerOrder`)
-  VALUES ('".$_POST["customerID"]."','".$_POST["customerName"]."','".$_POST["customerEmail"]."','".$_POST["customerOrder"]."')";
+$query = "INSERT INTO customer(`customerEmail`, `customerName`, `customerOrder`)
+  VALUES ('".$_POST["customerEmail"]."','".$_POST["customerName"]."','".$_POST["customerOrder"]."')";
 
         if (mysqli_query($connection, $query)) {
              echo "<div>

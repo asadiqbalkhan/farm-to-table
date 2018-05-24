@@ -169,9 +169,13 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                         <a class="refresh" href="#">
                                             <span class="fa fa-refresh"></span>
                                         </a>
+                                        <?php             $query3= "SELECT count(*) as yo FROM `customer`";
+                 $result3 = mysqli_query($connection, $query3);
+                   while ($row3 = mysqli_fetch_assoc($result3))
+                     { ?>
 
                                         <div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
-                                        <div class="timer" data-to="0" data-speed="1500">0</div>
+                                        <div class="timer" data-to="<?php echo $row3["yo"]; }?>" data-speed="1500">0</div>
                                         <div class="cardbox-icon">
                                             <i class="material-icons">supervisor_account</i>
                                         </div>
@@ -212,10 +216,14 @@ if(!(isset($_SESSION['login']) && $_SESSION['login'] != '')){
                                         <a class="refresh" href="#">
                                             <span class="fa fa-refresh"></span>
                                         </a>
+                                        <?php             $query4= "SELECT count(*) as yo FROM `sales`";
+                 $result4 = mysqli_query($connection, $query4);
+                   while ($row4 = mysqli_fetch_assoc($result4))
+                     { ?>
 
 
                                         <div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
-                                        <div class="timer" data-to="0" data-speed="1500">0</div>
+                                        <div class="timer" data-to="<?php echo $row4["yo"]; }?>" data-speed="1500">0</div>
                                         <div class="cardbox-icon">
                                             <i class="material-icons">email</i>
                                         </div>

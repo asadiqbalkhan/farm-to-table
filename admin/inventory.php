@@ -177,6 +177,7 @@
           <tr>
               <td>
                   <input type="checkbox" id="test1" class="selectall" />
+                  <input type="checkbox" name="chkbox[]" value=".$row1[0].">
                   <label for="test1"></label>
               </td>
               <td><?php echo $row1["itemID"]; ?></td>

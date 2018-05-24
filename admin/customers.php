@@ -169,7 +169,7 @@
                                 <input type="checkbox" id="test1" class="selectAl" />
                                 <label for="test1"></label>
                             </td>
-                            <td><?php echo $row1["customerID"]; ?></td>
+                            <td><?php echo $row1["cutomerID"]; ?></td>
                             <td><?php echo $row1["customerName"]; ?></td>
                             <td><?php echo $row1["customerEmail"]; ?></td>
                             <td><?php echo $row1["customerOrder"]; ?></td>

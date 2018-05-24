@@ -8,7 +8,7 @@
 
   if(isset($_POST['email']) || isset($_POST['password'])){
 
-    
+
         $query_userType = "SELECT * FROM `users` WHERE email = '".$_POST['email']."'";
         $result = mysqli_query($connection,$query_userType);
         $rows = mysqli_num_rows($result);
@@ -16,14 +16,18 @@
           $row = mysqli_fetch_assoc($result);
           if($row["userType"] === 'super admin'){
             $name = $row['username'];
+            $type = $row['userType'];
             $_SESSION['name'] = $name;
+            $_SESSION['type'] = $type;
             $_SESSION['login']= "true";
-            header('Location: loginadmin.php');
+            header('Location: index.php');
           }else{
-            $username = $row['username'];
-            $_SESSION['username'] = $username;
+            $name = $row['username'];
+            $type = $row['userType'];
+            $_SESSION['name'] = $name;
+            $_SESSION['type'] = $type;
             $_SESSION['login']= "true";
-            header('Location: loginuser.php');
+            header('Location: index.php');
           }
         }
         else{

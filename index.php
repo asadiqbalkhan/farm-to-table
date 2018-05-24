@@ -1,4 +1,5 @@
 <?php include_once("connection.php"); ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Include php files here for header and navigation -->
@@ -263,15 +264,15 @@
           <!-- carousel ends here for vegetables -->
         </div>
         <div class="panel-body">
-          <p><strong>Bidin</strong>--</p>
-          <img src="img/bidin.jpg">
-          <p><strong>Choysam</strong>--</p>
-          <img src="img/choysam.jpg">
-          <p><strong>Red onions</strong>--</p>
-          <img src="img/redonions.jpg">
-          <p><strong>Kangkung</strong>--</p>
-          <img src="img/kangkung.jpg">
+          <?php
+              $query1= "SELECT * FROM inventory where itemCategory= 'Vegetables' LIMIT 3";
+              $result1 = mysqli_query($connection, $query1);
+                while ($row1 = mysqli_fetch_assoc($result1))
+                  { ?>
+          <p><strong><?php echo $row1["itemName"]; ?></strong>--</p>
+          <img src="<?php echo $row1["Image"]; ?>">
         </div>
+      <?php } ?>
         <div class="panel-footer">
           <h3>PRICE DETAILS 1</h3>
           <p>Limited Time Offer</p>
@@ -312,14 +313,14 @@
           <!-- carousel ends here for fruits -->
         </div>
         <div class="panel-body">
-          <p><strong>Orange</strong> --</p>
-          <img src="img/oranges.jpg">
-          <p><strong>Apple</strong> --</p>
-          <img src="img/apple.jpg">
-          <p><strong>Mangosteen</strong> --</p>
-          <img src="img/mangosteen.jpg">
-          <p><strong>Papaya</strong> --</p>
-          <img src="img/papaya.jpg">
+          <?php
+              $query1= "SELECT * FROM inventory where itemCategory= 'Fruits' LIMIT 3";
+              $result1 = mysqli_query($connection, $query1);
+                while ($row1 = mysqli_fetch_assoc($result1))
+                  { ?>
+          <p><strong><?php echo $row1["itemName"]; ?></strong> --</p>
+            <img src="<?php echo $row1["Image"]; ?>">
+          <?php } ?>
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>
@@ -360,15 +361,16 @@
           </div>
           <!-- carousel ends here for meats -->
         </div>
+
         <div class="panel-body">
-          <p><strong> Beef </strong> -- </p>
-          <img src="img/beef_2.jpg"></img>
-          <p><strong> Chicken </strong> --</p>
-          <img src="img/chicken.jpg"></img>
-          <p><strong> Mutton </strong> --</p>
-          <img src="img/mutton.jpg"></img>
-          <p><strong> Lamb </strong> --</p>
-          <img src="img/lamb.jpg"></img>
+          <?php
+              $query1= "SELECT * FROM inventory where itemCategory= 'Meats' LIMIT 3";
+              $result1 = mysqli_query($connection, $query1);
+                while ($row1 = mysqli_fetch_assoc($result1))
+                  { ?>
+          <p><strong> <?php echo $row1["itemName"]; ?> </strong> -- </p>
+          <img src="<?php echo $row1["Image"]; ?>">
+        <?php } ?>
         </div>
         <div class="panel-footer">
           <h3>PRICE DETAILS</h3>

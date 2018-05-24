@@ -1,8 +1,8 @@
 <?php
 include_once("connection.php");
 
-$query = "INSERT INTO inventory(`itemCategory`, `itemPrice`, `itemName`, `itemQuantity`)
-  VALUES ('".$_POST["category"]."','".$_POST["price"]."','".$_POST["product"]."','".$_POST["quantity"]."')";
+$query = "INSERT INTO inventory(`itemCategory`, `itemPrice`, `itemName`, `itemQuantity`,`image`)
+  VALUES ('".$_POST["category"]."','".$_POST["price"]."','".$_POST["product"]."','".$_POST["quantity"]."','".$_POST["content"]."')";
 
         if (mysqli_query($connection, $query)) {
              echo "<div>

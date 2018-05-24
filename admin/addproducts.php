@@ -37,6 +37,7 @@
         <link href="assets/plugins/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
         <!-- custom CSS -->
         <link href="assets/dist/css/stylematerial.css" rel="stylesheet">
+        <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.3.0/uploadcare.full.min.js"></script>
     </head>
 
     <body>
@@ -162,6 +163,8 @@
                                           <div class="form-group">
                                             <label for="inputAddress">Price</label>
                                             <input type="text" class="form-control" id="price" name="price" placeholder="RM">
+                                            <label for="inputAddress">Image</label>
+                                            <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="5184f7f48c5f10ea2469" data-images-only />
                                           </div>
                                           <div class="form-row">
 
